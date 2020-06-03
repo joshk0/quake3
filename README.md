@@ -17,7 +17,6 @@ Install ioquake3, an open sourcing of the quake 3 arena engine, on the platform 
 1. You should now have a directory `C:\Program Files (x86)\ioquake3\baseq3`. Place pak0.pk3 there.
 1. Launch ioquake3 from the Start Menu.
 1. When prompted for a cd-key, just press Accept.
-1. Setup > System to change your resolution. Only 4:3 modes are supported. Google around for 'quake 3 widescreen' to make additional modes available.
 
 ## Customize the game
 
@@ -25,7 +24,19 @@ Install ioquake3, an open sourcing of the quake 3 arena engine, on the platform 
 1. Setup > Network, toggle the speed until you hit `LAN/Cable/xDSL`. Your ping will be horrible unless you do this.
 1. Setup > Game Options, if you want to change your crosshair (i usually do.)
 
-## Connect
+## HD / Wide screen on Windows
+
+Go to this path (Start > Run): `%appdata%\Quake3\baseq3` then edit `q3config.cfg` in an editor.
+Locate the lines which contain the variable names and replace values accordingly. Here are the keys and values to replace with for 1080p. Change as desired, save and exit and then you should be able to run the game with your new resolution.
+
+```
+seta r_mode "-1"
+seta r_customwidth "1920"
+seta r_customheight "1080"
+seta cg_fov "105"
+```
+
+## Connect and play
 
 1. Go back to main menu > Multiplayer
 1. Hit Specify and type `quake3.triplehelix.org`. Then Connect
